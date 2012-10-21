@@ -1,4 +1,4 @@
-#!/Users/fritzy/local/bin/node
+#!/usr/bin/env node
 var fs = require('fs'),
     redis = require('redis'),
     argv = require('optimist').usage("$0 filename.lua [#keys] [arg1] ...")

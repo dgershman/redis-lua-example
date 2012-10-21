@@ -1,10 +1,9 @@
-
 {
   "name": "skeleton",
   "version": "0.0.1",
   "homepage": "https://github.com/andyet/express-skeleton",
   "repository": {
-    "type": "git", 
+    "type": "git",
     "url": "git@github.com:andyet/express-skeleton.git"
   },
   "description": "Staring point for express projects",
@@ -16,7 +15,8 @@
     "underscore": "",
     "semi-static": "",
     "getconfig": "",
-    "thoonk": "git+https://github.com/andyet/thoonk.js.git#scripting"
+    "thoonk": "git+https://github.com/andyet/thoonk.js.git#scripting",
+    "optimist": "~0.3.5"
   },
   "main": "server.js"
 }

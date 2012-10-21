@@ -1,0 +1,12 @@
+!!!5
+html
+  head
+    - if (locals.pageTitle)
+      title!= 'App &mdash; ' + pageTitle
+    - else
+      title App
+    link(href="/css/bootstrap.css", rel="stylesheet")
+  body(id=locals.pageName || locals.bodyId)
+    .container
+      block content
+    block scripts

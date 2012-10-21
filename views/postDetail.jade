@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1= post.title
+  h3= 'by: ' + post.author
+  .body= post.body
+
+  p.comments
+    for comment in comments
+      .well
+        p= 'By: ' + comment.author
+        p= comment.comment
+
+  form(method="post", action="/post/" + post.id + "/comment")
+    legend Post a comment
+    label Name:
+    input(name="author")
+    label Comment:
+    textarea(name="comment")
+    p
+      button.btn.primary(type="submit") Comment

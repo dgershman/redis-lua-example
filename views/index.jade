@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h1 Posts
+
+  - for post in posts
+    p
+      a(href='/post/' + post.id)= post.title
+      span= '- ' + post.author 
+
+  form(method="post", action="/post")
+    legend Compose a new post
+    label Author
+    input(name="author")
+    label Post Title
+    input(name="title")
+    label Your brilliant blog post
+    textarea(name="body")
+    p
+      button.btn(type="submit") Submit
